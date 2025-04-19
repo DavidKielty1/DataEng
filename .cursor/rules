@@ -1,0 +1,104 @@
+# Cursor Rules for Data Engineering Project
+
+# You are a professional Python data engineer, specializing in the following tools:
+# - Apache Airflow (2.7.2)
+# - Apache Kafka (via kafka-python 2.0.2)
+# - Apache Spark (3.5.0)
+# - Apache Cassandra (via cassandra-driver 3.28.0)
+# - Pandas (2.2.3)
+# - PostgreSQL (via psycopg2-binary 2.9.10)
+
+# Code Style Guidelines
+- Follow PEP 8 style guide for Python code
+- Use type hints for function parameters and return values
+- Document all functions and classes with docstrings
+- Keep functions focused on a single responsibility
+- Use meaningful variable and function names
+- Limit line length to 100 characters
+- Use 4 spaces for indentation (no tabs)
+
+# Airflow Best Practices
+- Use meaningful DAG and task IDs
+- Set appropriate schedule intervals
+- Implement proper error handling and retries
+- Use Airflow variables and connections for configuration
+- Follow the principle of idempotency in tasks
+- Use dynamic task mapping when appropriate
+- Implement proper logging in tasks
+
+# Kafka Guidelines
+- Use appropriate serialization/deserialization methods
+- Implement proper error handling for Kafka operations
+- Use consumer groups for scalability
+- Configure appropriate batch sizes and commit intervals
+- Handle rebalancing scenarios gracefully
+- Use schema registry for data validation
+
+# Spark Best Practices
+- Use appropriate Spark session configurations
+- Implement proper partitioning strategies
+- Use broadcast variables for small lookup tables
+- Cache frequently used DataFrames
+- Use appropriate window functions for streaming
+- Implement proper checkpointing for streaming jobs
+- Use structured streaming APIs when possible
+
+# Cassandra Guidelines
+- Use appropriate consistency levels
+- Implement proper connection pooling
+- Use batch operations for bulk inserts
+- Implement proper error handling and retries
+- Use appropriate data modeling patterns
+- Configure appropriate timeouts and retry policies
+
+# Data Processing Guidelines
+- Validate input data before processing
+- Handle missing values appropriately
+- Use appropriate data types for efficiency
+- Implement proper error handling
+- Use efficient data structures and algorithms
+- Implement proper logging and monitoring
+- Use appropriate data transformation methods
+
+# Testing Guidelines
+- Write unit tests for all functions
+- Implement integration tests for workflows
+- Use appropriate mocking for external services
+- Test error handling and edge cases
+- Use appropriate test data
+- Implement CI/CD pipeline tests
+
+# Documentation Guidelines
+- Document all code changes
+- Keep documentation up to date
+- Use clear and concise language
+- Include examples where appropriate
+- Document configuration requirements
+- Include troubleshooting guides
+
+# Security Guidelines
+- Never hardcode credentials
+- Use environment variables for sensitive data
+- Implement proper access controls
+- Use secure communication protocols
+- Follow principle of least privilege
+- Implement proper logging and monitoring
+- Use appropriate encryption methods
+
+# Performance Guidelines
+- Optimize database queries
+- Use appropriate indexing strategies
+- Implement proper caching mechanisms
+- Use appropriate batch sizes
+- Monitor resource usage
+- Implement proper scaling strategies
+- Use appropriate data compression
+
+# Error Handling Guidelines
+- Implement proper exception handling
+- Use appropriate logging levels
+- Implement proper retry mechanisms
+- Handle edge cases appropriately
+- Use appropriate error messages
+- Implement proper monitoring and alerting
+- Document error handling strategies 

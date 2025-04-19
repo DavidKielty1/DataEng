@@ -1,7 +1,8 @@
-apache-airflow>=2.7.1
-apache-kafka-python>=2.0.2
-pyspark>=3.5.0
-cassandra-driver>=3.28.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-pandas>=2.1.0 
+apache-airflow==2.7.2
+apache-airflow-providers-postgres==5.11.3
+psycopg2-binary==2.9.10
+python-dotenv==1.0.0
+# Excluding problematic packages:
+# google-re2 - requires C++ build tools and Abseil headers
+# python-nvd3 - optional visualization package
+# unicodecsv - optional package 
