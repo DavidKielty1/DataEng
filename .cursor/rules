@@ -17,6 +17,19 @@
 - Limit line length to 100 characters
 - Use 4 spaces for indentation (no tabs)
 
+# Docker and Git Bash Guidelines
+- When running commands in Git Bash that involve Docker container paths:
+  - Use MSYS_NO_PATHCONV=1 to prevent path conversion issues
+  - Example: MSYS_NO_PATHCONV=1 docker-compose exec service-name python3 /path/in/container
+- This is specifically needed when:
+  - Running Python scripts inside containers
+  - Accessing files with absolute paths in containers
+  - Working with volume-mounted paths
+- When running Docker Compose commands in PowerShell:
+  - Use semicolon (;) instead of && for command chaining
+  - Example: docker-compose down --volumes; docker-compose up -d
+  - This is needed because PowerShell uses different command separators than bash
+
 # Airflow Best Practices
 - Use meaningful DAG and task IDs
 - Set appropriate schedule intervals
